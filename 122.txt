@@ -7556,7 +7556,7 @@ local LangSection = SettingsTab:AddSection("Language", false)
 local LangDropdown = LangSection:AddDropdown({
                 Name = "Language",
                 Options = langOptions,
-                Default = Translation.CurrentLanguage,
+                Default = {Translation.CurrentLanguage},
                 Callback = function(selected)
                     Translation.CurrentLanguage = selected
                     UpdateUIForLanguage()
