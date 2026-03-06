@@ -1,0 +1,295 @@
+-- Havoc UI Key System Template
+-- Documentation: https://mrhavoc-jnkie.github.io/MrHavoc-KeySystem/
+
+local Junkie_Configs = {
+	UseJunkie = true,
+	Junkie_Webhook = "",
+	Service = "Mystery Hub",
+	Identifier = "1032705",
+	Provider = "Mystery Hub",
+	Providers = {
+		{
+			Name = "",
+			Icon = "rbxassetid://135475048973669",
+			Url = "",
+			Show = true,
+			IsJunkie = true,
+			Pinned = true,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://122637139040192",
+			Url = "",
+			Show = true,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://81598390322167",
+			Url = "",
+			Show = true,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://137084367454843",
+			Url = "",
+			Show = true,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://97780154564910",
+			Url = "",
+			Show = false,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://71747327764154",
+			Url = "",
+			Show = true,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://0",
+			Url = "",
+			Show = false,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://89541242615678",
+			Url = "",
+			Show = false,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://84998267162454",
+			Url = "",
+			Show = true,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://88684203985262",
+			Url = "",
+			Show = false,
+			Pinned = false,
+		},
+		{
+			Name = "",
+			Icon = "rbxassetid://107106330956313",
+			Url = "",
+			Show = false,
+			Pinned = false,
+		},
+	},
+	MaxKeyAttempts = 5,
+	Premium = false,
+	GameSupport = {
+		[0] = {
+			Name = "",
+			Free = "",
+			Premium = ""
+		},
+		[0] = {
+			Name = "",
+			Free = "",
+			Premium = ""
+		},
+		[0] = {
+			Name = "",
+			Free = "",
+			Premium = ""
+		},
+		Universal = {
+			Name = "",
+			Free = "",
+			Premium = ""
+		},
+	},
+}
+local UI_Configs = {
+	Name = "",
+	Version = "",
+	Color = Color3.fromRGB(138, 43, 226),
+	Text_Color = "",
+	GradientAnimated = true,
+	GradientAnimationSpeed = 4,
+	Icon = "",
+	BadgeText = "",
+	CustomFont = "",
+	ShowOutline = true,
+	KeySystemLabel = "",
+	KeySystemPlaceholder = "",
+	ShowMemberCount = true,
+	SnowEnabled = true,
+	SnowDensity = 1.0,
+	SnowColor = Color3.fromRGB(220, 235, 255),
+	SnowSize = {Min = 3, Max = 7},
+	GlassOpacity = 0.18,
+	SlideInEnabled = true,
+	BlurEnabled = true,
+	BlurSize = 30,
+	OverlayOpacity = 0.65,
+	CloseOnSuccess = true,
+	SuccessMessage = "",
+	KeyFile = "",
+	Discord = "",
+	Socials = {
+		{ Name = "Discord", Icon = "rbxassetid://124569550333033", Link = "", Show = true, Pinned = true },
+		{ Name = "Twitter", Icon = "rbxassetid://109973626472548", Link = "", Show = true, Pinned = false },
+		{ Name = "YouTube", Icon = "rbxassetid://127161245916650", Link = "", Show = true, Pinned = false },
+		{ Name = "TikTok", Icon = "rbxassetid://104709330704441", Link = "", Show = false, Pinned = false },
+		{ Name = "Instagram", Icon = "rbxassetid://125560586243942", Link = "", Show = false, Pinned = false },
+		{ Name = "Telegram", Icon = "rbxassetid://103666565087375", Link = "", Show = false, Pinned = false },
+		{ Name = "Reddit", Icon = "rbxassetid://116113713008550", Link = "", Show = false, Pinned = false },
+		{ Name = "GitHub", Icon = "rbxassetid://82005505285811", Link = "", Show = true, Pinned = false },
+		{ Name = "Guilded", Icon = "rbxassetid://90800592251672", Link = "", Show = false, Pinned = false },
+		{ Name = "Patreon", Icon = "rbxassetid://111058338249202", Link = "", Show = false, Pinned = false },
+		{ Name = "Ko-fi", Icon = "rbxassetid://117795089880308", Link = "", Show = false, Pinned = false },
+		{ Name = "Twitch", Icon = "rbxassetid://88799126886971", Link = "", Show = false, Pinned = false },
+		{ Name = "V3rm", Icon = "rbxassetid://135908787183979", Link = "", Show = false, Pinned = false },
+		{ Name = "Website", Icon = "rbxassetid://70402301072503", Link = "", Show = true, Pinned = false },
+	},
+	AppLinks = {
+		{ Name = "", Icon = "rbxassetid://124569550333033", Link = "", Show = true, Pinned = true },
+	},
+	Instructions = {
+		{ Title = "", Body = "" },
+		{ Title = "", Body = "" },
+		{ Title = "", Body = "" },
+	},
+	Changelog = {
+		Show = true,
+		Title = "",
+		Versions = {
+			{
+				Version = "",
+				Date = "",
+				Tag = "",
+				Notes = {
+					"",
+				},
+			},
+			{
+				Version = "",
+				Date = "",
+				Tag = "",
+				Notes = {
+					"",
+				},
+			},
+			{
+				Version = "",
+				Date = "",
+				Tag = "",
+				Notes = {
+					"",
+				},
+			},
+		},
+	},
+}
+local Config = {
+	Name = UI_Configs.Name,
+	Version = UI_Configs.Version,
+	Color = UI_Configs.Color,
+	Text_Color = UI_Configs.Text_Color,
+	GradientAnimated = UI_Configs.GradientAnimated,
+	GradientAnimationSpeed = UI_Configs.GradientAnimationSpeed,
+	Icon = UI_Configs.Icon,
+	BadgeText = UI_Configs.BadgeText,
+	CustomFont = UI_Configs.CustomFont,
+	ShowOutline = UI_Configs.ShowOutline,
+	KeySystemLabel = UI_Configs.KeySystemLabel,
+	KeySystemPlaceholder = UI_Configs.KeySystemPlaceholder,
+	ShowMemberCount = UI_Configs.ShowMemberCount,
+	SnowEnabled = UI_Configs.SnowEnabled,
+	SnowDensity = UI_Configs.SnowDensity,
+	SnowColor = UI_Configs.SnowColor,
+	SnowSize = UI_Configs.SnowSize,
+	GlassOpacity = UI_Configs.GlassOpacity,
+	SlideInEnabled = UI_Configs.SlideInEnabled,
+	BlurEnabled = UI_Configs.BlurEnabled,
+	BlurSize = UI_Configs.BlurSize,
+	OverlayOpacity = UI_Configs.OverlayOpacity,
+	CloseOnSuccess = UI_Configs.CloseOnSuccess,
+	SuccessMessage = UI_Configs.SuccessMessage,
+	KeyFile = UI_Configs.KeyFile,
+	Discord = UI_Configs.Discord,
+	Socials = UI_Configs.Socials,
+	AppLinks = UI_Configs.AppLinks,
+	Instructions = UI_Configs.Instructions,
+	Changelog = UI_Configs.Changelog,
+	UseJunkie = Junkie_Configs.UseJunkie,
+	Junkie_Webhook = Junkie_Configs.Junkie_Webhook,
+	Junkie = {
+		Service = Junkie_Configs.Service,
+		Identifier = Junkie_Configs.Identifier,
+		Provider = Junkie_Configs.Provider,
+	},
+	Providers = Junkie_Configs.Providers,
+	MaxKeyAttempts = Junkie_Configs.MaxKeyAttempts,
+	Premium = Junkie_Configs.Premium,
+	GameSupport = Junkie_Configs.GameSupport,
+}
+local Hub = loadstring(game:HttpGet("https://cdn.jnkie.com/havoc.lua"))()
+local function hasFileSystemSupport()
+	local hw = pcall(function() return type(writefile) == "function" end)
+	local hr = pcall(function() return type(readfile) == "function" end)
+	local hi = pcall(function() return type(isfile) == "function" end)
+	return hw and hr and hi
+end
+local fileSystemSupported = hasFileSystemSupport()
+local KeyFile = UI_Configs.KeyFile or ""
+local function saveVerifiedKey(key)
+	if not fileSystemSupported then return false end
+	return pcall(function()
+		writefile(KeyFile, key)
+	end)
+end
+local function loadVerifiedKey()
+	if not fileSystemSupported then return nil end
+	local ok, content = pcall(function()
+		return readfile(KeyFile)
+	end)
+	if not ok or not content or content == "" then return nil end
+	return content
+end
+local function TryAutoLogin()
+	if not Junkie_Configs.UseJunkie then return false end
+    local lib = loadstring(game:HttpGet("https://jnkie.com/sdk/library.lua"))()
+	lib.service = Junkie_Configs.Service
+	lib.identifier = Junkie_Configs.Identifier
+	lib.provider = Junkie_Configs.Provider
+	local savedKey = loadVerifiedKey()
+	local keyToCheck = savedKey or getgenv().SCRIPT_KEY
+	if not keyToCheck or keyToCheck == "" then return false end
+	local result = lib.check_key(keyToCheck)
+	if result and result.valid then
+		if result.message == "KEYLESS" then
+			getgenv().SCRIPT_KEY = "KEYLESS"
+            getgenv().LOAD = true
+		else
+			if not savedKey then saveVerifiedKey(keyToCheck) end
+			getgenv().SCRIPT_KEY = keyToCheck
+            getgenv().LOAD = true
+		end
+		return true
+	end
+	return false
+end
+local autoLoginResult = TryAutoLogin()
+if not autoLoginResult then
+	pcall(function()
+		local hub = Hub.new(Config)
+		hub:Init()
+	end)
+end
+while not getgenv().LOAD do
+	task.wait(0.1)
+end
