@@ -9,7 +9,6 @@ local function load(path) return loadstring(game:HttpGet(BASE .. path))() end
 
 -- Modules
 local ColorModule    = load("Elements/color.lua")
-local ElementsModule = load("Elements/Elements.lua")
 local KeybindModule  = load("Elements/keybind.lua")
 
 -- Icons
